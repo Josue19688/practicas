@@ -1,0 +1,10 @@
+
+
+<h1>Listado de Libros</h1>
+<ul class="list-group" *ngIf="libros">
+    <li *ngFor="let item of libros" class="list-group-item">
+        {{item.nombre}}<br>
+        {{item.author}}<br>
+        Q.{{item.price | number:'1.2-2'}}<br>
+    </li>
+</ul>

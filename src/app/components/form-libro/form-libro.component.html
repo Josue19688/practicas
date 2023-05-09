@@ -1,0 +1,22 @@
+
+<h1>Crear Libro</h1>
+<div class="card mt-5">
+    <div class="card-body">
+        <form [formGroup]="miFormulario" (ngSubmit)="crear()">
+            <div class="row mb-2">
+                <div class="col">
+                  <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" formControlName="author" placeholder="Author" aria-label="Last name">
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                  <input type="text" class="form-control" formControlName="price" placeholder="Price" aria-label="First name">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear</button>
+        </form>
+    </div>
+</div>
